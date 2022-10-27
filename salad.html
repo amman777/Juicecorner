@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="salad.css">
+    <title>Welcome To Juice Corner</title>
+</head>
+
+<body>
+    <div class="line"></div>
+    <header>
+        <div class="juiceimage">
+            <!-- <img src="https://i.ibb.co/MDDs3VP/JUICE-CORNER.png" alt="JUICE-CORNER"> -->
+          <a href ="index.html">  <h1><span><Strong>Juice</Strong> <strong></strong> </span> Corner</h1>
+          </a>
+
+        </div>
+    </header>
+    <div class="line"></div>
+    <div class="back">
+        <a href="customer.html"><i class='bx bx-arrow-back'></i></a>
+    </div>
+    <div class="refresh">
+        <a href="salad.html"><i class='bx bx-refresh'></i></a>
+    </div>
+    <div class="menu">
+        <h2>MENU</h2>
+    </div>
+    <section>
+        <div class="heading">
+            <h3>Juices</h3>
+            <h3 class="p1">Price</h3>
+            <h3 class="q1">Qty.</h3>
+        </div>
+
+    </section>
+    <section class="juices">
+        <div class="lemon">
+            <div class="content">
+                <img src="https://i.ibb.co/44tWdJf/fruit.jpg" alt="">
+                <h4 class="name">FRUIT<br> SALAD</h4>
+                <h4 class="p">Rs.25</h4>
+                <input type="number" value="" id="s1" oninput="myfun()"> <br>
+            </div>
+        </div>
+        <div class="lemon">
+            <div class="content">
+                <img src="https://i.ibb.co/J5Rmxf6/mix-fruit.jpg" alt="">
+                <h4 class="name">MIX FRUIT <br> SALAD</h4>
+                <h4 class="p">Rs.30</h4>
+                <input type="number" value="" id="s2" oninput="myfun()"> <br>
+            </div>
+
+    </section>
+
+
+    <div>
+
+        <h2 class="total">Payable Amount: Rs.<span id="total"></span></h2>
+
+    </div>
+    <!-- <input class="Total2" type="submit" value="" onkeyup="return myfun()"> -->
+
+  <a href="upi://pay?pa=kanchan01jaiswal-1@okicici&amp;pn=Juice Center&amp;tn=Paid through WebSite&amp;am=" id="pay1" onclick =calci()>
+        <p class="pay">Pay Now</p>
+    </a>
+<div>
+    <br>
+    <br>
+</div>
+    <footer>
+        <div class="footer">
+            <p> Created by Amman & Kunal <br>&copy; All Rights Reserved</p>
+        </div>
+    </footer>
+    <script>
+ let c;
+        function myfun() {
+            let a = document.getElementById('s1').value;
+            let b = document.getElementById('s2').value;
+         
+            let a1 = a * 25;
+            let b1 = b * 30;
+            c = a1+b1;
+           
+            document.getElementById('total').innerHTML = c;
+            
+        }
+        function calci()
+        {
+            let d = document.getElementById('pay1').href;
+            let e = d+c +";cu=INR";
+            document.getElementById('pay1').href= e;
+        }
+    </script>
+  
+</body>
+
+</html>

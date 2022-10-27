@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000;
+    --secound-color: #676472;
+    --main-color: #9c51b6;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+
+}
+
+body {
+    background-color: rgb(221, 183, 237);
+    height: auto;
+    /* border: solid red; */
+}
+
+header {
+    /* border: solid pink; */
+    background: url(https://i.ibb.co/tcpz1bP/intro.png);
+    background-color: #faedce;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    height: 70px;
+    justify-content: center;
+    position: sticky;
+}
+
+header h1 {
+    /* position: relative; */
+    /* margin-top: 20px; */
+    color: var(--text-color);
+    padding-top: 10px;
+    text-shadow: 0px 12px 17px black;
+    letter-spacing: 3px;
+    /* border: solid red; */
+}
+
+header h1 span {
+    font-family: 'Merriweather', serif;
+    /* border: solid red; */
+    color: var(--main-color);
+}
+
+/* image  */
+header .juiceimage img {
+    max-width: 100%;
+    width: 18.9rem;
+    /* border: solid red; */
+    background: url(intro.png);
+    /* background-color: aqua; */
+    /* height: 82px; */
+    margin-top: 12px;
+    margin-left: 25px;
+    scale: 1.2;
+    /* padding: 12px 12px; */
+}
+
+
+/* line  */
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+/* back button  */
+.back {
+    /* border: solid red; */
+    align-items: center;
+    /* background-color: var(--secound-color); */
+    margin-top: 12px;
+    width: 30px;
+    background: url(https://i.ibb.co/tcpz1bP/intro.png);
+    background-color: #9d7ab4;
+    height: 30px;
+    margin-left: 8px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    font-size: 20px;
+    color: var(--main-color);
+
+}
+
+.back i {
+    margin-top: 4px;
+}
+
+/* reload button */
+
+.refresh {
+    /* border: solid red; */
+    align-items: center;
+    /* background-color: var(--secound-color); */
+    margin-top: 18px;
+    width: 30px;
+    background: url(https://i.ibb.co/tcpz1bP/intro.png);
+    background-color: #9d7ab4;
+    height: 30px;
+    margin-left: 8px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.refresh i{
+    font-size: 30px;
+}
+
+.heading {
+    display: flex;
+    margin-top: 20px;
+    /* margin: auto; */
+}
+
+.menu {
+    /* border: solid red; */
+    width: 6rem;
+    margin: auto;
+    text-align: center;
+    margin-top: -32px;
+    color: black;
+}
+
+.menu h2 {
+    border: solid var(--secound-color)
+}
+
+.heading h3 {
+
+    /* border: solid green; */
+    font-size: 23px;
+    margin: 0px 62px 0px 51px;
+    padding: 3px 3px;
+    /* background: url(https://i.ibb.co/tcpz1bP/intro.png);
+    background-color: #b4a87a; */
+    border-radius: 12px;
+    /* display: flex; */
+}
+
+/* juice section */
+.heading .p1 {
+    position: absolute;
+    margin-left: 180px;
+}
+
+.heading .q1 {
+    position: absolute;
+    margin-left: 272px;
+}
+
+.juices {
+    display: grid;
+    grid-template-columns: (1, 1fr);
+    margin-top: -15px;
+}
+
+/* Lemon */
+.lemon {
+    background: url(https://i.ibb.co/tcpz1bP/intro.png);
+    background-color: #d9d1fa;
+    width: 95%;
+    height: 80px;
+    /* border: solid red; */
+    display: flex;
+    margin-top: 16px;
+    margin-left: 7px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 18px black;
+
+}
+
+#shake {
+    background: url(https://i.ibb.co/tcpz1bP/intro.png);
+    background-color: #baebcd;
+}
+
+.content {
+    margin-top: 10px;
+    display: flex;
+}
+
+.lemon img {
+    height: 60px;
+    width: 60px;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.lemon .name {
+    display: inline-block;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 69px;
+    /* border: solid green; */
+}
+
+.lemon .p {
+    margin-top: 15px;
+    /* font-size: 12px; */
+    margin-left: 120px;
+    /* border: solid red; */
+
+    /* position: absolute; */
+}
+
+/* #j3 {
+    /* margin-left: ; */
+
+
+.lemon input {
+    /* position: relative; */
+    height: 26px;
+    width: 50px;
+    margin-left: 40px;
+    margin-top: 17px;
+
+}
+
+#shak {
+    margin-top: -12px;
+}
+
+/* footer  */
+footer {
+    height: 48px;
+    width: 100%;
+    background-color: #000;
+    color: #ffff;
+    text-align: center;
+    margin-top: 254px;
+}
+
+.pay{
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #9c51b6;
+    /* border: solid white; */
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 4px;
+    box-shadow: 3px 6px 20px black;
+}
+.total{
+    font-size: 25px;
+    font-weight: 430;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000;
+    --secound-color: #676472;
+    --main-color: #9c51b6;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+
+}
+
+body {
+    background-color: rgb(221, 183, 237);
+   
+}
+
+header {
+    background: url(https://i.ibb.co/tcpz1bP/intro.png);
+    background-color: #faedce;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+header h1{
+    color: var(--text-color);
+
+    text-shadow: 0px 4px 22px black;
+    letter-spacing: 5px;
+    font-size: 3.8rem;
+    margin-top: -10px;
+   }
+
+header h1 span {
+    font-family: 'Merriweather', serif;
+
+    color: var(--main-color);
+}
+
+
+
+
+
+/* line  */
+.line
+{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #000;
+}
+
+.info h3 span {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info h3 {
+    color: var(--bg-color);
+}
+
+
+
+/* box section  */
+.boxes
+{
+    display: flex;
+    justify-content: center;
+}
+.box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
+
+}
+
+section .info {
+    background: #ffffff;
+    box-shadow: 0px 0px 20px 0px rgb(67, 65, 65);
+    border-radius: 12px;
+    padding: 19px 50px 50px 50px;
+    cursor: pointer;
+    height: 12rem;
+    width: 22rem;
+    border: 1px solid black;
+    background: url(https://i.ibb.co/tcpz1bP/intro.png);
+    background-color: #faedce;
+    display: flex;
+    justify-content: center;
+}
+
+.info img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+   
+}
+.paras1 h2
+{
+    display: inline;
+}
+
+#im1 {
+    background-color: #baebcd;
+}
+
+#im2 {
+    background-color: #f8d990;
+}
+
+#box2 {
+    margin-top: 34px;
+}
+
+.info h2 {
+    font-size: 29px;
+    font-weight: 500;
+    color: var(--text-color);
+ 
+}
+
+.info h2 span {
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.info p {
+    color: var(--secound-color);
+    font-size: var(--p-font);
+ 
+}
+
+/* footer  */
+footer {
+    height: 48px;
+    width: 100%;
+    background-color: #000;
+    color: #ffff;
+    text-align: center;
+    margin-top: 127px;
+
+}
+@media (max-width: 768px)
+{
+    header h1
+    {
+        font-size: 3.2rem ;
+    }
+    section .info
+    {
+        height: 20rem;
+        width: 22rem;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px)
+{
+    header h1
+    {
+        font-size: 2.8rem ;
+    }
+    section .info
+    {
+        height: 14rem;
+        width: 17rem;
+        align-items: center;
+    }
+    .info .ig img
+    {
+        height: 30px;
+        width: 30px;
+   }
+    .info h2
+    {
+        font-size: 20px;
+    }
+    p
+    {
+        font-size: 1.8rem;
+    }
+    footer p
+    {
+        font-size: 1rem;
+    }
+
+}
+@media (max-width: 320px)
+{
+    header h1
+    {
+        font-size: 2rem ;
+    }
+    section .info
+    {
+        height: 16rem;
+        width: 14rem;
+        align-items: center;
+    }
+    .info h2
+    {
+        font-size: 12px;
+    }
+   .info p
+    {
+        font-size: 0.8rem;
+    }
+    .info .ig img
+    {
+        height: 25px;
+        width: 25px;
+   }
+   footer p
+   {
+       font-size: 0.8rem;
+   }
+}

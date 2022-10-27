@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimental</title>
+</head>
+<body>
+    <div>
+        <label for="">Input: </label>
+        <input type="text" name="" onkeyup="mult(this.value);">
+        <br><br>
+        
+        <label for="">Input: </label>
+        <input type="text" name="" onkeyup="mult(this.value);">
+        <br><br>
+
+        <label for="">Output</label>
+        <input type="text" id="out2x" name="">
+        <br><br>
+        <!-- <label for="">Output x3</label>
+        <input type="text" id="out3x" name=""> -->
+    </div>
+    <script>
+        function mult(value)
+        {
+            var x,y,z;
+            x = 30 * value;
+            y = 20 * value1;
+            z = x + y;
+            document.getElementById('out2x').value = z;
+            // document.getElementById('out3x').value = y;
+
+        }
+    </script>
+</body>
+</html>
